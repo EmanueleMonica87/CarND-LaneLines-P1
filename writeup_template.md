@@ -27,25 +27,25 @@ The goals / steps of this project are the following:
 
 I used the basic steps explained during the course. I first applied a grayscale conversion and gaussian blurring to prepare the image for a Canny transformation
 
-[image1]: ./for_markup/gray/output_solidWhiteCurve.jpg "grayscale"
+[image2]: ./for_markup/gray/output_solidWhiteCurve.jpg "grayscale"
 ![alt text][image2]
 
 Then the Canny transform applied to the grayscale image outputs big differences in gradient, as shown below
 
-[image1]: ./for_markup/canny/output_solidWhiteCurve.jpg "canny"
+[image3]: ./for_markup/canny/output_solidWhiteCurve.jpg "canny"
 ![alt text][image3]
 
 As next step, we need to define a polygonal mask to filter out everything that is not in the region of possible lanes. In our case, we are interested in the ego lane, so we can build a trapezium where the horizon sets the maximum height and the vertices of the image set the base.
 
-[image1]: ./for_markup/target/output_solidWhiteCurve.jpg "lines"
+[image4]: ./for_markup/target/output_solidWhiteCurve.jpg "lines"
 ![alt text][image4]
 
-[image1]: ./for_markup/lines/output_solidWhiteCurve.jpg "lines"
+[image5]: ./for_markup/lines/output_solidWhiteCurve.jpg "lines"
 ![alt text][image5]
 
 As last step, we will use the Hough transform to identify linear segments in the image. 
 
-[image1]: ./test_images_output/output_solidWhiteCurve.jpg "lines"
+[image6]: ./test_images_output/output_solidWhiteCurve.jpg "lines"
 ![alt text][image6]
 
 Each line is represented by 4 points, which we can use to define a function called draw_lines(), that extrapolate, interpolate them to form one, unique line. The function would work in the following way:
