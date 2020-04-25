@@ -23,6 +23,8 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
+This first project is also the first attempt coding in Python and using GitHub. As such, much time was spent into understading the environment and how basic code worked, along with the concepts of the course. I opted for using code written by Udacity teachers (https://www.youtube.com/watch?v=hnXkCiM2RSg&t=1357s) and the concepts for modifying the draw_line function was taken by a fellow student (peps0791/Udacity-SDCNDP-Lane-Finding on GitHub) which I both deeply thank for sharing their knowledge. When my Python skills will mature, and time will allow me, I will come back to this project to modify it with my own personal code, which I hope will also be able to tackle the challenge videos.
+
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 I used the basic steps explained during the course. I first applied a grayscale conversion and gaussian blurring to prepare the image for a Canny transformation
