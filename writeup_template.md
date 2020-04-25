@@ -55,6 +55,8 @@ Each line is represented by 4 points, which we can use to define a function call
 * we can take the y_min of all the lines as the y_min for the final line
 * finally, we can use the line equation to find the missing x values from the values of the mean intercept, the mean slope, the y_min and the y_max which we set equal to the bottom of the image. We use this final lines with the source image to blend it in the final output.
 
+After building the pipeline for images, the same pipeline was applied to videos too. The performance was ok in both white lanes and yellow-white lanes, as long as the road light was constant and the road was straight. It performed poorly on the challenge video. All the videos can be seen by accessing the folder test_videos_output.
+
 ### 2. Potential shortcomings
 
 The shortcoming of this pipeline is the robustness to different light conditions. As this can be seen from the final challenge video, shadows and curved road change the sun direction and this impacts the detection of the lines a lot.
